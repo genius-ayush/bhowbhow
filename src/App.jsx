@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <div className='.body'>
       <Navbar />
       <HeroSection />
       <ServicesSection />
@@ -18,7 +18,7 @@ function App() {
       <ContactSection />
       <CTASection />
       <Footer />
-    </>
+      </div>
   )
 }
 

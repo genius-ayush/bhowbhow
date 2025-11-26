@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
         <Swiper
           className="swiper"
           modules={[Autoplay]}
-          slidesPerView={5.5}
+          slidesPerView={4.5}
           spaceBetween={32}
           centeredSlides={true}
           loop={true}
@@ -68,6 +68,7 @@ const TestimonialsSection = () => {
             delay: 0,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
+            stopOnLastSlide: false,
           }}
           breakpoints={{
             1400: {

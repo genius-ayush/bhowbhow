@@ -34,15 +34,15 @@ const BeforeAfterCard = ({ title, before, after }) => {
       <div className="transformation-images">
         <div className="transformation-image is-after">
           <img src={after} alt={`${title} after grooming`} loading="lazy" />
+          <span className="after-label badge-label">After</span>
         </div>
         <div
           className="transformation-image is-before"
           style={{ width: `${position}%` }}
         >
           <img src={before} alt={`${title} before grooming`} loading="lazy" />
+          <span className="before-label badge-label">Before</span>
         </div>
-        <span className="before-label">Before</span>
-        <span className="after-label">After</span>
 
         <input
           type="range"
@@ -64,7 +64,6 @@ const BeforeAfterCard = ({ title, before, after }) => {
           <i className="bi bi-chevron-right"></i>
         </button>
 
-        
       </div>
       <div className="transformation-title">{title}</div>
     </div>
