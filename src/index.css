@@ -470,6 +470,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ==================== SERVICES SECTION ==================== */
 .services-section {
     padding: 150px 120px;
+    background-color: white;
 }
 
 .section-intro {
@@ -1006,6 +1007,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ==================== CTA SECTION ==================== */
 .cta-section {
     padding: 60px 0;
+    background-color: white;
 }
 
 .cta-card {

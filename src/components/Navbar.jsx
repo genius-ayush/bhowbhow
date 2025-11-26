@@ -4,30 +4,27 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    let lastScrollTop = 0;
     const navbar = document.querySelector('.navbar');
     const scrollThreshold = 100;
-
+  
     const handleScroll = () => {
       let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
+  
       if (currentScroll <= scrollThreshold) {
+        // Show navbar at top of page
         navbar.style.transform = 'translateX(-50%) translateY(0)';
         navbar.style.opacity = '1';
-      } else if (currentScroll > lastScrollTop) {
-        navbar.style.transform = 'translateX(-50%) translateY(-100px)';
-        navbar.style.opacity = '0';
       } else {
-        navbar.style.transform = 'translateX(-50%) translateY(0)';
-        navbar.style.opacity = '1';
+        // User has scrolled down past threshold → permanently hide
+        navbar.style.transform = 'translateX(-50%) translateY(-120px)';
+        navbar.style.opacity = '0';
       }
-
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
