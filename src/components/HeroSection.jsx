@@ -54,7 +54,7 @@ const HeroSection = () => {
                 <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=face"
                   alt="Customer" />
               </div>
-              <p className="trusted-text">Trusted by <strong>2 Lakh+ customers</strong></p>
+              <p className="trusted-text"><strong>Trusted by 2 Lakh+ customers</strong></p>
             </div>
           </div>
 
