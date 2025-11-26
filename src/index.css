@@ -58,7 +58,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 15px 12px 25px;
     z-index: 1000;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-    transition: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
 }
 
 .nav-container {
@@ -247,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
     width: 100%;
     min-height: 10vh;
-    padding: 10px 60px 0px 60px;
+    padding: 70px 60px 0px 60px;
     background-image: url("/img2.png");
     background-size: cover;
     background-position: center;
